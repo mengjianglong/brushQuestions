@@ -1,0 +1,371 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+button {
+    background-color: transparent;
+}
+
+button:focus {
+    outline: 0;
+    border: 1px #ddd solid;
+}
+
+body {
+    position: relative;
+    background: url(static/file/single-portfolio1.jpg)
+}
+
+#blackCover {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+
+.black{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    display: block !important;
+}
+
+
+#blackCover > div{
+    background-color: #ddd;
+    width: 280px;
+    height: 160px;
+    margin-left: -140px;
+    position: absolute;
+    left: 50%;
+    top: 150px;
+    border-radius:10px;
+}
+
+
+/* "提示" */
+#blackCover span{
+    display: block;
+    text-align: center;
+    color: #000;
+    margin-top:10px;
+    font-size: 16px;
+    font-weight:700;
+    padding:5.4% 0;
+    margin: 0 auto;
+}
+
+#information{
+    text-align: justify;
+    color: #3f3f3f;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+#goOn{
+    display: block;
+    background-color:#ED171F;
+    width:30.4%;
+    margin:0 auto;
+    font-size:14px;
+    color:#fff;
+    font-weight:700;
+    height:36px;
+    border-radius:8px;
+    line-height:36px;
+    border:1px solid red;
+}
+
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+
+#examTitle {
+    width: 100%;
+    height: 100px;
+}
+
+#examTitle h1 {
+    color: #FFFFFF;
+    padding: 20px 0 30px 40px;
+    float: left;
+    font-size: 36px;
+}
+
+/*左侧选题区域*/
+
+#itemSelection {
+    width: 25%;
+    height: 100%;
+    box-shadow: 4px 0 2px #EFF1F0;
+    float: left;
+    background: linear-gradient(to right, #EDF8F2 0%, #EDF8F2 97.9%, #C8CBCA 98%, #FAFAFA 100%);
+    box-sizing: border-box;
+}
+
+#itemChoose {
+    width: 100%;
+    height: 600px;
+    padding: 10px 12px 0 3px;
+    box-sizing: border-box;
+}
+
+#itemChoose>div {
+    width: 100%;
+    margin: 6px;
+    float: left;
+}
+
+#itemChoose button {
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #39CB76;
+    border-radius: 3px;
+    color: #39CB76;
+    font-family: "黑体";
+    float: left;
+    margin: 6px 3px 6px 6px;
+}
+
+#itemChoose>div p {
+    height: 16px;
+    line-height: 16px;
+    text-align: left;
+    float: left;
+    margin: 6px 3px 6px 3px;
+    font-size: 15px;
+    color: #6EAD8B;
+}
+
+#itemChoose>div ul {
+    display: block;
+    margin: 0 3px;
+    float: left;
+    width: 100%;
+}
+
+#itemChoose>div li {
+    text-align: center;
+    font-size: 15px;
+    border-radius: 3px;
+    float: left;
+    margin: 3px 5px;
+    cursor: pointer;
+}
+
+.nowAnswer {
+    background-color: #F0FAF5;
+    border: 1px solid #609080;
+    color: #90B5A2;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    box-shadow: 0px 0px 4px #888888;
+}
+
+.markAnswer {
+    background-color: #FFAD00 !important;
+    border: 1px solid #FFAD00 !important;
+    color: #fff !important;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.yesAnswer {
+    background-color: #2AB064;
+    border: 1px solid #2AB064;
+    color: #fff;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.noAnswer {
+    background-color: #F0FAF5;
+    border: 1px solid #ddd;
+    color: #90B5A2;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+}
+
+/*标记指示信息*/
+#markInfo {
+    width: 100%;
+    height: 80px;
+    background-color: #D5EDDF;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    background: linear-gradient(to right, #D5EDDF, #D6EEE0 97.9%, #A4BAAD 98%, #D2E8DB 100%);
+}
+
+#markInfo li {
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    display: block;
+    width: 60px;
+    float: left;
+    font-size: 12px;
+    margin: 5px 10px;
+}
+
+
+#markInfo span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+
+#answer {
+    width: 75%;
+    height: 100%;
+    float: left;
+}
+
+#info {
+    width: 100%;
+    height: 50px;
+    background-color: #F2F2F2;
+    float: left;
+    font-family: "宋体";
+    line-height: 50px;
+    text-indent: 15px;
+    font-size: 15px;
+    color: #333;
+}
+
+#item {
+    width: 100%;
+    height: 550px;
+    background-color: #FFFFFF;
+    float: left;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+#index {
+    font-style: normal;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 20px;
+    color: #1F834B;
+    font-weight: 800;
+}
+
+#describe {
+    line-height: 23px;
+    /* word-spacing: 20px; */
+    /*字符宽度，专有空格*/
+    letter-spacing: 1px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* 题目中的图片 */
+
+#describe img{
+    max-width: 80%;
+    margin:10px auto;
+}
+
+
+#option {
+    background-color: #EEF9F3;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+#option p {
+    display: inline-block;
+    line-height: 17px;
+    text-align: justify;
+    margin: 5px 20px 0 10px;
+}
+
+#option i {
+    font-style: normal;
+}
+
+
+#option li {
+    margin: 5px 0;
+}
+
+
+/* 题目解析 */
+#explain {
+    margin: 0 30px;
+    width: 626px;
+    background: rgba(87, 192, 133, 0.05);
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    border: 1px dashed #ffd;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-align: justify;
+    font-size: 16px;
+    color: #3f3f3f;
+    line-height: 22px;
+}
+
+#explain p:first-child {
+    color: #4B7C5F;
+    font-weight: 800;
+    margin: 0 0 6px -8px;
+}
+
+#ctrlBtn {
+    width: 100%;
+    height: 80px;
+    background-color: #D5EDDF;
+    float: left;
+}
+
+#ctrlBtn button {
+    width: 80px;
+    height: 36px;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    float: left;
+    margin: 20px -24px 12px 30px;
+}
+
+.enable {
+    color: #EEE !important;
+}
+
+#prevItem,
+#nextItem,
+#markItem {
+    background-color: #FBAD04;
+    margin-left: 40px !important;
+}
+
+#submit {
+    background-color: #FF635C;
+}

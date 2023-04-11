@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>答题系统</title>
+    <link rel="stylesheet" href="Stylesheet.css" />
+    <script src="title.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div id="examTitle">
+            <h1>简易刷题系统</h1>
+        </div>
+        <div id="itemSelection">
+            <div id="itemChoose"></div>
+            <ul id="markInfo">
+                <li>未做<span class="noAnswer"></span></li>
+                <li>已做<span class="yesAnswer"></span></li>
+            </ul>
+        </div>
+        <div id="answer">
+            <div id="info">
+                <h2>考试题目练习</h2>
+            </div>
+            <div id="item">
+                <i id="index"> 1丨单选题</i>
+                <p id="describe"></p>
+                <ul id="option"></ul>
+                <div id="explain">
+                    <p>【答案解析】</p>
+                    <p id="knowledge"></p>
+                </div>
+            </div>
+            <div id="ctrlBtn">
+                <button id="prevItem">上一题</button>
+                <button id="nextItem">下一题</button>
+                <button id="submit">交卷</button>
+            </div>
+        </div>
+    </div>
+    <script src="subject.js"></script>
+</body>
+
+</html>
