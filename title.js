@@ -163,7 +163,7 @@ var subject = [{
 },
 {
     "order": 3,
-    "type": "multiple",
+    "type": "single",
     "describe": "设计性能较优的关系模式称为规范化，规范化的主要理论依据是( )",
     "option": ["关系规范化理论","关系运算理论","代数运算理论","数理逻辑理论"],
     "solution": "A",
@@ -173,7 +173,7 @@ var subject = [{
     "score": 1,
 },{
     "order": 3, //题目编号，需从1开始，依次增加
-    "type": "multiple", //题目类型，single单选、multiple多选、judge判断、indeterminate不定项
+    "type": "single", //题目类型，single单选、multiple多选、judge判断、indeterminate不定项
     "describe": "假如采用关系数据库系统来实现应用，在数据库设计的( )阶段，需要将ER模型转换为关系数据模型。", //题目描述
     "option": ["概念设计", "物理设计", "逻辑设计", "运行阶段"], //各个选项描述
     "solution": "C", //参考答案
