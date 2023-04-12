@@ -8,36 +8,44 @@
     <script src="title.js"></script>
 </head>
 <body>
-    <div id="main">
-        <div id="examTitle">
-            <h1>简易刷题系统</h1>
-        </div>
-        <div id="itemSelection">
-            <div id="itemChoose"></div>
-            <ul id="markInfo">
-                <li>未做<span class="noAnswer"></span></li>
-                <li>已做<span class="yesAnswer"></span></li>
-            </ul>
-        </div>
-        <div id="answer">
-            <div id="info">
-                <h2>考试题目练习</h2>
+    <div id="wrapper">
+        <header>
+            <div id="examTitle">
+                <h1>简易刷题系统</h1>
+                <img style="float: right;" src="static/picture/logo-white.png">
             </div>
-            <div id="item">
-                <i id="index"> 1丨单选题</i>
-                <p id="describe"></p>
-                <ul id="option"></ul>
-                <div id="explain">
-                    <p>【答案解析】</p>
-                    <p id="knowledge"></p>
+        </header>
+        <main>
+            <div id="answer">
+                <div id="itemSelection">
+                    <div id="itemChoose"></div>
+                </div>
+                <div id="info">
+                    <h2>考试题目练习</h2>
+                </div>
+                <div id="item">
+                    <i id="index"> 1丨单选题</i>
+                    <p id="describe"></p>
+                    <ul id="option"></ul>
+                    <div id="explain">
+                        <p>【答案解析】</p>
+                        <p id="knowledge"></p>
+                    </div>
                 </div>
             </div>
+        </main>
+        <footer>
             <div id="ctrlBtn">
-                <button id="prevItem">上一题</button>
-                <button id="nextItem">下一题</button>
+                <ul id="markInfo">
+                    <li>未做<span class="noAnswer"></span></li>
+                    <li>正确<span class="yesAnswer"></span></li>
+                    <li>错误<span class="errorAnswer"></span></li>
+                </ul>
                 <button id="submit">交卷</button>
+                <button id="nextItem">下一题</button>
+                <button id="prevItem">上一题</button>
             </div>
-        </div>
+        </footer>
     </div>
     <script src="subject.js"></script>
 </body>

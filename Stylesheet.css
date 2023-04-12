@@ -2,24 +2,23 @@
     padding: 0;
     margin: 0;
 }
-
+html,body{
+    height: 100%;
+}
 ul li {
     list-style: none;
 }
-
 button {
     background-color: transparent;
 }
-
 button:focus {
     outline: 0;
     border: 1px #ddd solid;
 }
-
-body {
+/* body {
     position: relative;
     background: url(static/file/single-portfolio1.jpg)
-}
+} */
 
 #blackCover {
     width: 100%;
@@ -85,22 +84,34 @@ body {
 }
 
 
-#main {
-    width: 100%;
+#wrapper {
+    flex-direction: column;
+    display: flex;
     height: 100%;
+    background-color: cadetblue;
 }
 
+header{
+    flex: 0 1 auto;
+}
+
+main{
+    flex: 1 1;
+}
+
+footer{
+    flex: 0 0 auto;
+}
 
 #examTitle {
     width: 100%;
-    height: 100px;
 }
 
 #examTitle h1 {
     color: #FFFFFF;
     padding: 20px 0 30px 40px;
     float: left;
-    font-size: 36px;
+    font-size: 25px;
 }
 
 /*左侧选题区域*/
@@ -112,6 +123,7 @@ body {
     float: left;
     background: linear-gradient(to right, #EDF8F2 0%, #EDF8F2 97.9%, #C8CBCA 98%, #FAFAFA 100%);
     box-sizing: border-box;
+    margin-right: 20px;
 }
 
 #itemChoose {
@@ -203,14 +215,13 @@ body {
     line-height: 22px;
 }
 
-/*标记指示信息*/
-#markInfo {
-    width: 100%;
-    height: 80px;
-    background-color: #D5EDDF;
-    box-sizing: border-box;
-    padding: 8px 10px;
-    background: linear-gradient(to right, #D5EDDF, #D6EEE0 97.9%, #A4BAAD 98%, #D2E8DB 100%);
+.errorAnswer {
+    background-color: #ED171F;
+    border: 1px solid #ddd;
+    color: #90B5A2;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
 }
 
 #markInfo li {
@@ -221,7 +232,7 @@ body {
     width: 60px;
     float: left;
     font-size: 12px;
-    margin: 5px 10px;
+    margin: 10px 5px 10px 10px;
 }
 
 
@@ -234,11 +245,9 @@ body {
     margin-left: 5px;
 }
 
-
 #answer {
-    width: 75%;
+    width: 100%;
     height: 100%;
-    float: left;
 }
 
 #info {
@@ -255,17 +264,15 @@ body {
 
 #item {
     width: 100%;
-    height: 550px;
+    height: 100%;
     background-color: #FFFFFF;
-    float: left;
-    padding: 20px 30px;
     box-sizing: border-box;
-    position: relative;
 }
 
 
 #index {
     font-style: normal;
+    padding-top: 10px;
     margin-bottom: 20px;
     display: block;
     font-size: 20px;
@@ -275,11 +282,10 @@ body {
 
 #describe {
     line-height: 23px;
-    /* word-spacing: 20px; */
-    /*字符宽度，专有空格*/
     letter-spacing: 1px;
     text-align: justify;
     margin-bottom: 15px;
+    margin-right: 20px;
 }
 
 /* 题目中的图片 */
@@ -315,10 +321,7 @@ body {
 
 /* 题目解析 */
 #explain {
-    margin: 0 30px;
-    width: 626px;
     background: rgba(87, 192, 133, 0.05);
-    position: absolute;
     bottom: 20px;
     right: 0;
     border: 1px dashed #ffd;
@@ -328,6 +331,7 @@ body {
     font-size: 16px;
     color: #3f3f3f;
     line-height: 22px;
+    margin-top: 30px;
 }
 
 #explain p:first-child {
@@ -338,7 +342,6 @@ body {
 
 #ctrlBtn {
     width: 100%;
-    height: 80px;
     background-color: #D5EDDF;
     float: left;
 }
@@ -351,8 +354,8 @@ body {
     text-align: center;
     color: #fff;
     font-size: 16px;
-    float: left;
-    margin: 20px -24px 12px 30px;
+    float: right;
+    margin: 10px 5px 10px 10px;
 }
 
 .enable {
@@ -363,7 +366,6 @@ body {
 #nextItem,
 #markItem {
     background-color: #FBAD04;
-    margin-left: 40px !important;
 }
 
 #submit {

@@ -6,14 +6,26 @@ window.onload = function() {
     //写入各个大题的div
     var itemChooseHTML = '';
     for (var i = 0; i < itemCouAll; i++) {
-        itemChooseHTML +=
+        if(i == 0){
+            itemChooseHTML +=
             `
             <div id = ${'order'+i} >
                 <button> - </button>
-                <p>第${i+1}道大题</p>
+                <p>计算器专业英语</p>
                 <ul></ul>
             </div>
             `
+        }
+        if(i == 1){
+            itemChooseHTML +=
+            `
+            <div id = ${'order'+i} >
+                <button> - </button>
+                <p>数据库原理</p>
+                <ul></ul>
+            </div>
+            `
+        }
     }
     document.getElementById('itemChoose').innerHTML = itemChooseHTML;
 
@@ -131,6 +143,7 @@ function refresh() {
     var liList = document.getElementById('itemChoose').getElementsByTagName('li');
     for (var i = 0; i < liList.length; i++) {
         if (i === indexItem) {
+            let a = document.getElementById('option');
             liList[i].classList.add('nowAnswer');
         } else {
             liList[i].classList.remove('nowAnswer');
@@ -181,8 +194,14 @@ function BindOpt() {
                 document.getElementById('itemChoose').getElementsByTagName('li')[indexItem].classList.add('noAnswer');
                 document.getElementById('itemChoose').getElementsByTagName('li')[indexItem].classList.remove('yesAnswer');
             } else {
-                document.getElementById('itemChoose').getElementsByTagName('li')[indexItem].classList.add('yesAnswer');
-                document.getElementById('itemChoose').getElementsByTagName('li')[indexItem].classList.remove('noAnswer');
+                let inp = document.getElementById('itemChoose').getElementsByTagName('li')[indexItem];
+                if (subject[indexItem].answer === '' || subject[indexItem].answer !== subject[indexItem].solution) {
+                    inp.classList.add('errorAnswer');
+                }else{
+                    inp.classList.add('yesAnswer');
+                    inp.classList.remove('errorAnswer');
+                }
+                inp.classList.remove('noAnswer');
             }
 
         }
