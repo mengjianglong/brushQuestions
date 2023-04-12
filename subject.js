@@ -26,6 +26,16 @@ window.onload = function() {
             </div>
             `
         }
+        if(i == 2){
+            itemChooseHTML +=
+            `
+            <div id = ${'order'+i} >
+                <button> - </button>
+                <p>数据结构</p>
+                <ul></ul>
+            </div>
+            `
+        }
     }
     document.getElementById('itemChoose').innerHTML = itemChooseHTML;
 

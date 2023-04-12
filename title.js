@@ -983,4 +983,179 @@ var subject = [{
     "mark": false,
     "score": 1,
 }
+,
+{
+    "order": 3,
+    "type": "single",
+    "describe": "下列选项中，不属于线性结构的是",
+    "option": ["线性表","双向链表","循环队列","二叉树"],
+    "solution": "D",
+    "explain": "",
+    "answer": "",
+    "mark": false,
+    "score": 1,
+},
+{
+    "order": 3,
+    "type": "single",
+    "describe": "某线性表L含 有n个元素，采用单循环链表保存，仅有尾指针指向链表的终端结点。在最后一个结点之后插入一个结点及删除第一个结点的时间复杂度分别是",
+    "option": ["0(1)和 0(1）","O (1)和 O (n) ","O (n)和O (1)","O(n)和  O(n)"],
+    "solution": "A",
+    "explain": "",
+    "answer": "",
+    "mark": false,
+    "score": 1,
+},
+{
+    "order": 3,
+    "type": "single",
+    "describe": "下列应用中会用到栈",
+    "option": ["计算后缀表达式的值","图的广度优先遍历","对数组进行希尔排序","对散列表进行查找"],
+    "solution": "A",
+    "explain": "",
+    "answer": "",
+    "mark": false,
+    "score": 1,
+},{
+    "order": 3, //题目编号，需从1开始，依次增加
+    "type": "single", //题目类型，single单选、multiple多选、judge判断、indeterminate不定项
+    "describe": "设栈初始为空，入栈序列为1，2， 3， 4， 5，下列选项中，不可能得到的出栈序列", //题目描述
+    "option": ["1，2，3，4，5 ","3， 1，4， 2 ，5","4，3，2 ，5，1","5， 4，3，2，1"], //各个选项描述
+    "solution": "B", //参考答案
+    "explain": "", //题目解析
+    "answer": "", //考生答案
+    "mark": false, //是否标记，初始值为0，表示未标记，此项会根据具体情况更改，不用人工自己操作
+    "score": 1, //该题目满分
+},
+{
+    "order": 3,
+    "type": "single",
+    "describe": "己知广义表LS = (((c，((d))，(e，(（f))，(g，h)，((m，n)))，head(L S )",
+    "option": ["c","（c）","（c，（d））","((c，(d))，(e，(f)))"],
+    "solution": "D",
+    "explain": "",
+    "answer": "",
+    "mark": false,
+    "score": 1,
+},
+{
+    "order": 3,
+    "type": "single",
+    "describe": "用有向图结构表示实体类型及实体间联系的数据模型称为_____",
+    "option": ["网状模型"],
+    "solution": "A",
+    "explain": "",
+    "answer": "",
+    "mark": false,
+    "score": 1,
+},
+{
+    "order": 3,
+    "type": "single",
+    "describe": "设线性表采用顺序存储方式保存，每个元素占8 个存储单元。第 1 个元素的存储地 址为200，则第5 个元素占用的最后一个存储单元的地址",
+    "option": ["239", "240", "247", "248"],
+    "solution": "A",
+    "explain": "",
+    "answer": "",
+    "mark": false,
+    "score": 1,
+},{
+    "order": 3, //题目编号，需从1开始，依次增加
+    "type": "single", //题目类型，single单选、multiple多选、judge判断、indeterminate不定项
+    "describe": "— 棵 完 全 二 叉 树T的 全 部k个 叶 结 点 都 在 同 一 层 中 ，每 个 分 支 结 点 都 有 两 个 孩子 结 点 。T中包含的结点数是", //题目描述
+    "option": ["k", "2k-1", "k2", "2k-l"], //各个选项描述
+    "solution": "B", //参考答案
+    "explain": "", //题目解析
+    "answer": "", //考生答案
+    "mark": false, //是否标记，初始值为0，表示未标记，此项会根据具体情况更改，不用人工自己操作
+    "score": 1, //该题目满分
+},
+{
+    "order": 3,
+    "type": "single",
+    "describe": "设 字 符集中有n个 字 符 ，对 其进行哈夫曼编码，得到的哈夫曼树的结点总数",
+    "option": ["2n_ 1", "2n", "2n+l", "不确定"],
+    "solution": "A",
+    "explain": "",
+    "answer": "",
+    "mark": false,
+    "score": 1,
+},
+{
+    "order": 3,
+    "type": "single",
+    "describe": "设 图G的 邻 接 矩 阵A如 下所示。G的各顶点的度依次是",
+    "option": ["1， 2， 1， 2", "2， 2， 1， 1", "3， 4， 2， 3", "4， 4， 2， 2"],
+    "solution": "C",
+    "explain": "",
+    "answer": "",
+    "mark": false,
+    "score": 1,
+},
+{
+    "order": 3,
+    "type": "single",
+    "describe": "对 题 10- 1 1 图进行深度优先遍历，下列选项中，正确的遍历序列是",
+    "option": ["1， 2， 3， 4， 5", "2， 3， 5， 4， 1", "3， 5，  1， 2， 4 ", "4， 3， 5，  1， 2"],
+    "solution": "A",
+    "explain": "",
+    "answer": "",
+    "mark": false,
+    "score": 1,
+},{
+    "order": 3, //题目编号，需从1开始，依次增加
+    "type": "single", //题目类型，single单选、multiple多选、judge判断、indeterminate不定项
+    "describe": "对 题 10-1 1 图进行拓扑排序，下列选项中，正确的拓扑序列是", //题目描述
+    "option": [" 1， 2， 3， 4， 5", "2， 3，  1， 4， 5", "3， 5， 1， 2， 4", "5，3， 1， 2， 4"], //各个选项描述
+    "solution": "D", //参考答案
+    "explain": "", //题目解析
+    "answer": "", //考生答案
+    "mark": false, //是否标记，初始值为0，表示未标记，此项会根据具体情况更改，不用人工自己操作
+    "score": 1, //该题目满分
+},
+{
+    "order": 3,
+    "type": "single",
+    "describe": "下列排序方法中，不是稳定排序方法的是",
+    "option": ["直接插入排序","冒泡排序","归并排序","快速排序"],
+    "solution": "D",
+    "explain": "",
+    "answer": "",
+    "mark": false,
+    "score": 1,
+},
+{
+    "order": 3,
+    "type": "single",
+    "describe": "已 知 数 据 序 列（ 18， 19， 20， 4， 51， 6， 30， 1， 2）是某种排序算法第二趟排序后得到的结 果 ，则该算法可能是",
+    "option": ["选择排序","冒泡排序","直接插入排序","快速排序"],
+    "solution": "C",
+    "explain": "",
+    "answer": "",
+    "mark": false,
+    "score": 1,
+},
+{
+    "order": 3,
+    "type": "single",
+    "describe": "对 有 序 表 （1，3， 9，12，32，41，45，62，75，77）进 行 二 分 查 找 ，查 找 关 键 字 9 时 ，进行 比较的关键字依次是",
+    "option": ["1， 3， 9","32， 3， 9","32，  12， 9","41， 12， 9 "],
+    "solution": "B",
+    "explain": "",
+    "answer": "",
+    "mark": false,
+    "score": 1,
+}
+,
+{
+    "order": 3, //题目编号，需从1开始，依次增加
+    "type": "single", //题目类型，single单选、multiple多选、judge判断、indeterminate不定项
+    "describe": "分别使用下列数据序列建立二叉排序树，能得到高度最高的二叉树的是", //题目描述
+    "option": ["10， 8， 9， 6， 12， 11，13","10， 6， 8， 9，  12， 11， 13","10， 12，  11， 13， 8， 6","10， 8， 6， 9， 12， 13， 11"], //各个选项描述
+    "solution": "B", //参考答案
+    "explain": "", //题目解析
+    "answer": "", //考生答案
+    "mark": false, //是否标记，初始值为0，表示未标记，此项会根据具体情况更改，不用人工自己操作
+    "score": 1, //该题目满分
+}
 ];
